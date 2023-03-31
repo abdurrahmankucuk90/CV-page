@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 header{
@@ -55,7 +56,21 @@ body{
     height: 100%;    
     flex: 0 0 calc(80% - 1rem);
     padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
     
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+  }
+  
+  .projectContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
   }
   
   @media screen and (max-width: 1264px) {
@@ -74,3 +89,8 @@ body{
     }
   }
   
+  @media print {
+    #newPage{
+      margin-top: 8rem;
+    }
+  }
